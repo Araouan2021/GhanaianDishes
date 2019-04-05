@@ -11,6 +11,6 @@ db.define_table('recipes',
                 Field('time'),
                 Field('size'),
                 Field('file', 'upload'),
-                auth.signature              
+                auth.signature
                 )
 auth.settings.login_url = URL('login')
