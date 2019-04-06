@@ -1,15 +1,10 @@
+<!DOCTYPE html>
+<html>
 <body>
-
-  <ul>
-    <li><a href="{{=URL('index')}}">Home</a></li>
-    <div class="search-container">
-    <form action="{{=URL('search')}}" method="post">
-      <input type="text" placeholder="Search.." name="search">
-      </form>   
-  </ul>
-
   <h1>Pantry</h1>
-        {{for ad in ads:}}
-          
-              <img src="{{=URL('download', args=ad.file)}}" alt="...">
+        {{for recipe in recipes:}}    
+              <img src="{{=URL('download', args=recipe.file)}}" alt="...">
+        {{pass}}
+</body>
+</html>
               

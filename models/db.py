@@ -7,7 +7,6 @@ auth.define_tables(username=False)
 db.define_table('recipes',
                 Field('title'),
                 Field('ingredients'),
-                Field('measurements'),
                 Field('time'),
                 Field('size'),
                 Field('file', 'upload'),
