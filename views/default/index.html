@@ -55,14 +55,29 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
+
 <body>
   <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
         {{for recipe in recipes:}}    
-              <img src="{{=URL('download', args=recipe.file)}}" alt="...">
+              <img width="1000px"
+                   height="500px"
+                   src="{{=URL('download', args=recipe.file)}}" alt="...">
         {{pass}}
-        <label class="container">tomatoes
-  <input type="checkbox" checked="checked">
+
+<label class="container">tomatoes
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">tomato paste
+  <input type="checkbox">
   <span class="checkmark"></span>
 </label>
 
@@ -79,7 +94,44 @@
 <label class="container">rice
   <input type="checkbox">
   <span class="checkmark"></span>
-<label class="container">rice
+</label>
+
+<label class="container">black pepper
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">salt
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">ginger
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">cabbage
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">carrots
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">potatoes
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">meat
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">fish
   <input type="checkbox">
   <span class="checkmark"></span>
 </label>

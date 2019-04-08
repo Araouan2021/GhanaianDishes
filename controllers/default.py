@@ -1,3 +1,4 @@
+
 def show():
     recipes = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
     return dict(recipes=recipes)
