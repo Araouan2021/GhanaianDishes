@@ -22,12 +22,28 @@ def delete():
     else:
         return 'No Recipe With the ID found'
 
+
 def getRecipe():
     ingredients = request.vars.ingredient
-    return dict(ingredients=ingredients)
+    print(ingredients)
+    currentIndex = 0
+    recipes = ""
 
-def search():
-    query = db.recipes.title.contains(request.vars.search)
-    recipes = db(query).select(orderby=db.recipes.title)
+    for ingredient in ingredients:
+        if currentIndex==0:
+            print(currentIndex)
+            query = db.recipes.ingredients.contains(ingredient)
+            recipes = db(query).select()
+            currentIndex = 9;
+        else:
+            if len(recipes)>0:
+                recipes = filter(lambda recipe: ingredient in recipe.ingredients, recipes)
+            else:
+                break
+            
     return dict(recipes=recipes)
+        
+
+
+        
 
