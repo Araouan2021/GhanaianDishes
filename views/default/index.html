@@ -3,6 +3,10 @@
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 </head>
 <style>
+
+body {
+	background-color: FloralWhite;
+}
 .container {
   display: block;
   position: relative;
@@ -60,81 +64,160 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 </style>
 
 <body>
   <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
         {{for recipe in recipes:}}    
-              <img width="1000px"
+              <img width="700px"
                    height="500px"
                    src="{{=URL('download', args=recipe.file)}}" alt="...">
         {{pass}}
 
+<form action="{{=URL('getRecipe')}}" method="post">
 <label class="container">tomatoes
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">tomato paste
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">onions
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">chicken
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
-<label class="container">rice
-  <input type="checkbox">
+<label class="container"> white rice
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">black pepper
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">salt
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">ginger
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">cabbage
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">carrots
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">potatoes
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">meat
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">fish
-  <input type="checkbox">
+  <input type="checkbox" name="ingredient">
   <span class="checkmark"></span>
 </label>
+
+<label class="container">vegetable oil
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">red beans
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">palm oil
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">black eyed peas
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">corn
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">cassava dough
+  <input type="checkbox" name="ingredient" value="cassava do">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">green plaintain flour
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">maize dough
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">millet dough
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">cayenne pepper
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">dawadawa
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">ayoyo leaves
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">cocoyam leaves
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">eggs
+  <input type="checkbox" name="ingredient">
+  <span class="checkmark"></span>
+</label>
+
+<input type="submit" value="Get Recipe">
+</form>
 </body>
 </html>
               

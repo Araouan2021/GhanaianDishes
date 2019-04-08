@@ -22,6 +22,10 @@ def delete():
     else:
         return 'No Recipe With the ID found'
 
+def getRecipe():
+    ingredients = request.vars.ingredient
+    return dict(ingredients=ingredients)
+
 def search():
     query = db.recipes.title.contains(request.vars.search)
     recipes = db(query).select(orderby=db.recipes.title)
