@@ -61,22 +61,19 @@ body {
 }
 
 img {
+  border-radius: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 80px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 </style>
 
 <body>
   <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
         {{for recipe in recipes:}}    
-              <img width="700px"
-                   height="500px"
+              <img width="800px"
+                   height="700px"
                    src="{{=URL('download', args=recipe.file)}}" alt="...">
         {{pass}}
 
@@ -102,8 +99,8 @@ img {
   <span class="checkmark"></span>
 </label>
 
-<label class="container"> white rice
-  <input type="checkbox" name="ingredient" value="white rice">
+<label class="container">rice
+  <input type="checkbox" name="ingredient" value="rice">
   <span class="checkmark"></span>
 </label>
 
