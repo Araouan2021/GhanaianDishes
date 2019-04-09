@@ -67,14 +67,17 @@ img {
   margin-right: auto;
   padding-bottom: 80px;
 }
+
 </style>
 
 <body>
   <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
+
         {{for recipe in recipes:}}    
-              <img width="800px"
-                   height="700px"
+              <img width="500px"
+                   height="400px"
                    src="{{=URL('download', args=recipe.file)}}" alt="...">
+
         {{pass}}
 
 <form action="{{=URL('getRecipe')}}" method="post">
@@ -98,6 +101,7 @@ img {
   <input type="checkbox" name="ingredient" value="chicken">
   <span class="checkmark"></span>
 </label>
+</div>
 
 <label class="container">rice
   <input type="checkbox" name="ingredient" value="rice">
@@ -215,6 +219,7 @@ img {
 </label>
 
 <input type="submit" value="Get Recipe">
+
 </form>
 </body>
 </html>
