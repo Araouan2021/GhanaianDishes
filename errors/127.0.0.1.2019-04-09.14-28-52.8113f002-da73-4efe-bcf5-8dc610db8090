@@ -1,0 +1,761 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'recipe' is not defined"
+p3
+sS'layer'
+p4
+S'/Users/bola/Desktop/web2py/applications/GhanaianDishes/views/default/index.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<head>\\n<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">\\n</head>\\n<style>\\n\\nbody {\\n\\tbackground-color: FloralWhite;\\n}\\n.container {\\n  display: block;\\n  position: relative;\\n  padding-left: 35px;\\n  margin-bottom: 12px;\\n  cursor: pointer;\\n  font-size: 22px;\\n  -webkit-user-select: none;\\n  -moz-user-select: none;\\n  -ms-user-select: none;\\n  user-select: none;\\n}\\n.container input {\\n  position: absolute;\\n  opacity: 0;\\n  cursor: pointer;\\n  height: 0;\\n  width: 0;\\n}\\n.checkmark {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  height: 25px;\\n  width: 25px;\\n  background-color: #eee;\\n}\\n.container:hover input ~ .checkmark {\\n  background-color: #ccc;\\n}\\n.container input:checked ~ .checkmark {\\n  background-color: DarkRed;\\n}\\n.checkmark:after {\\n  content: "";\\n  position: absolute;\\n  display: none;\\n}\\n.container input:checked ~ .checkmark:after {\\n  display: block;\\n}\\n.container .checkmark:after {\\n  left: 9px;\\n  top: 5px;\\n  width: 5px;\\n  height: 10px;\\n  border: solid white;\\n  border-width: 0 3px 3px 0;\\n  -webkit-transform: rotate(45deg);\\n  -ms-transform: rotate(45deg);\\n  transform: rotate(45deg);\\n}\\n\\nimg {\\n  border-radius: 10px;\\n  display: block;\\n  margin-left: auto;\\n  margin-right: auto;\\n  padding-bottom: 80px;\\n}\\n\\n</style>\\n\\n<body>\\n  <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: \\\'Questrial\\\', sans-serif;, sans-serif;">Pantry</h1>\\n\\n<img width="500px"\\n     height="400px"\\n     src="\', escape=False)\nresponse.write(URL(\'download\', args=recipe.file))\nresponse.write(\'" alt="...">\\n\\n<form action="\', escape=False)\nresponse.write(URL(\'getRecipe\'))\nresponse.write(\'" method="post">\\n\\n<label class="container">tomatoes\\n  <input type="checkbox" name="ingredient" value="tomatoes">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">tomato paste\\n  <input type="checkbox" name="ingredient" value="tomato paste">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">onions\\n  <input type="checkbox" name="ingredient" value="onions">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">chicken\\n  <input type="checkbox" name="ingredient" value="chicken">\\n  <span class="checkmark"></span>\\n</label>\\n</div>\\n\\n<label class="container">rice\\n  <input type="checkbox" name="ingredient" value="rice">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">black pepper\\n  <input type="checkbox" name="ingredient" value="black pepper">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">salt\\n  <input type="checkbox" name="ingredient" value="salt">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">ginger\\n  <input type="checkbox" name="ingredient" value="ginger">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cabbage\\n  <input type="checkbox" name="ingredient" value="cabbage">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">carrots\\n  <input type="checkbox" name="ingredient" value="carrots">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">potatoes\\n  <input type="checkbox" name="ingredient" value="potatoes">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">meat\\n  <input type="checkbox" name="ingredient" value="meat">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">fish\\n  <input type="checkbox" name="ingredient" value="fish">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">vegetable oil\\n  <input type="checkbox" name="ingredient" value="vegetable oil">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">red beans\\n  <input type="checkbox" name="ingredient" value="red beans">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">palm oil\\n  <input type="checkbox" name="ingredient" value="palm oil">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">black eyed peas\\n  <input type="checkbox" name="ingredient" value="black eyed peas">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">corn\\n  <input type="checkbox" name="ingredient" value="corn">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cassava dough\\n  <input type="checkbox" name="ingredient" value="cassava dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">green plaintain flour\\n  <input type="checkbox" name="ingredient" value="green plantain flour">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">maize dough\\n  <input type="checkbox" name="ingredient" value="maize dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">millet dough\\n  <input type="checkbox" name="ingredient" value="millet dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cayenne pepper\\n  <input type="checkbox" name="ingredient" value="cayenne pepper">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">dawadawa\\n  <input type="checkbox" name="ingredient" value="dawadawa">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">ayoyo leaves\\n  <input type="checkbox" name="ingredient" value="ayoyo leaves">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cocoyam leaves\\n  <input type="checkbox" name="ingredient" value="cocoyam leaves">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">eggs\\n  <input type="checkbox" name="ingredient" value="eggs">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<input type="submit" value="Get Recipe">\\n\\n</form>\\n</body>\\n</html>\\n              \', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__getslice__'
+p12
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p13
+sS'__str__'
+p14
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p15
+sS'__reduce__'
+p16
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p17
+sS'__dict__'
+p18
+S'{}'
+p19
+sS'message'
+p20
+S'"name \'recipe\' is not defined"'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p23
+sS'__init__'
+p24
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p25
+sS'__setattr__'
+p26
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p27
+sS'__reduce_ex__'
+p28
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p29
+sS'__new__'
+p30
+S'<built-in method __new__ of type object>'
+p31
+sS'__format__'
+p32
+S'<built-in method __format__ of exceptions.NameError object>'
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.NameError'>"
+p35
+sS'__doc__'
+p36
+S"'Name not found globally.'"
+p37
+sS'__getitem__'
+p38
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p39
+sS'__setstate__'
+p40
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p41
+sS'__getattribute__'
+p42
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p43
+sS'args'
+p44
+S'("name \'recipe\' is not defined",)'
+p45
+sS'__subclasshook__'
+p46
+S'<built-in method __subclasshook__ of type object>'
+p47
+sS'__unicode__'
+p48
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p49
+sS'__delattr__'
+p50
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p51
+sS'__repr__'
+p52
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p53
+sS'__hash__'
+p54
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p55
+ssS'evalue'
+p56
+S"name 'recipe' is not defined"
+p57
+sS'request'
+p58
+cgluon.html
+XML_unpickle
+p59
+(S's r\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>GhanaianDishes</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0b5ff936-7f55-4c1a-98fd-3c33a2fc519a<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_awalsmanagementsystem</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-b9956d51-171e-4e37-8eee-c2b3a541f51c<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_buysell</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-48d9c6a2-a1f1-4ba7-981d-2af14930b97f<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_buysellapp</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-a006720d-e75e-4fc4-8e8e-8c12c70337c4<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_ghanaiandishes</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_images</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d7d572e1-51e9-433c-ab2c-d3225087f96a<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f41edbcc-3c69-4104-9283-dcac047f30d6<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, br</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_admin=127.0.0.1-0b5ff936-7f55-4c1a-98fd-3c33a2fc519a; session_id_images=127.0.0.1-d7d572e1-51e9-433c-ab2c-d3225087f96a; session_id_buysell=127.0.0.1-48d9c6a2-a1f1-4ba7-981d-2af14930b97f; session_id_awalsmanagementsystem=127.0.0.1-b9956d51-171e-4e37-8eee-c2b3a541f51c; session_id_ghanaiandishes=127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40; session_id_buysellapp=127.0.0.1-a006720d-e75e-4fc4-8e8e-8c12c70337c4; session_id_welcome=127.0.0.1-f41edbcc-3c69-4104-9283-dcac047f30d6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_UPGRADE_INSECURE_REQUESTS</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/GhanaianDishes/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>52455</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>Bolas-MBP</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/bola/Desktop/web2py/applications/admin/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/buysellapp/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/GhanaianDishes/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/welcome/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x103163dd0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;Bolas-MBP&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/bola/Desktop/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, br</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_admin=127.0.0.1-0b5ff936-7f55-4c1a-98fd-3c33a2fc519a; session_id_images=127.0.0.1-d7d572e1-51e9-433c-ab2c-d3225087f96a; session_id_buysell=127.0.0.1-48d9c6a2-a1f1-4ba7-981d-2af14930b97f; session_id_awalsmanagementsystem=127.0.0.1-b9956d51-171e-4e37-8eee-c2b3a541f51c; session_id_ghanaiandishes=127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40; session_id_buysellapp=127.0.0.1-a006720d-e75e-4fc4-8e8e-8c12c70337c4; session_id_welcome=127.0.0.1-f41edbcc-3c69-4104-9283-dcac047f30d6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_upgrade_insecure_requests</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>Bolas-MBP</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/GhanaianDishes/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>52455</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/GhanaianDishes/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>Bolas-MBP</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_original_uri</td><td style="vertical-align:top;">:</td><td><div>/GhanaianDishes/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.17.1-stable+timestamp.2018.08.06.01.02.56</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1023e51e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x103115ef0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x107e74550&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1023e51e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x103115ef0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x107e74550&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py/applications/GhanaianDishes/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/bola/Desktop/web2py/applications/admin/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/buysellapp/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/GhanaianDishes/&#x27;, &#x27;/Users/bola/Desktop/web2py/applications/welcome/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x103163dd0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;Bolas-MBP&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/bola/Desktop/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>Bolas-MBP</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.17.1-stable+timestamp.2018.08.06.01.02.56</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 4, 9, 14, 28, 52, 205215)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/GhanaianDishes/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 4, 9, 14, 28, 52, 205225)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x109893a90&gt;</div></td></tr></table></div>'
+tRp60
+sS'frames'
+p61
+(lp62
+(dp63
+S'file'
+p64
+S'/Users/bola/Desktop/web2py/gluon/restricted.py'
+p65
+sS'dump'
+p66
+(dp67
+S'environment'
+p68
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}"
+p69
+sS'ccode'
+p70
+S'<code object <module> at 0x10763b830, file "/Use...GhanaianDishes/views/default/index.html", line 1>'
+p71
+ssS'lnum'
+p72
+I219
+sS'lines'
+p73
+(dp74
+I214
+S'    if environment is None:'
+p75
+sI215
+S'        environment = {}'
+p76
+sI216
+S"    environment['__file__'] = layer"
+p77
+sI217
+S"    environment['__name__'] = '__restricted__'"
+p78
+sI218
+S'    try:'
+p79
+sI219
+S'        exec(ccode, environment)'
+p80
+sI220
+S'    except HTTP:'
+p81
+sI221
+S'        raise'
+p82
+sI222
+S'    except RestrictedError:'
+p83
+sI223
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p84
+ssS'call'
+p85
+S'(ccode=<code object <module> at 0x10763b830, file "/Use...GhanaianDishes/views/default/index.html", line 1>, environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, ...}, layer=\'/Users/bola/Desktop/web2py/applications/GhanaianDishes/views/default/index.html\', scode=r"response.write(\'<!DOCTYPE html>\\n<head>\\n<link h...n</body>\\n</html>\\n              \', escape=False)")'
+p86
+sS'func'
+p87
+S'restricted'
+p88
+sa(dp89
+g64
+S'/Users/bola/Desktop/web2py/applications/GhanaianDishes/views/default/index.html'
+p90
+sg66
+(dp91
+S'head'
+p92
+S'undefined'
+p93
+ssg72
+I2
+sg73
+(dp94
+I1
+S'response.write(\'<!DOCTYPE html>\\n<head>\\n<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">\\n</head>\\n<style>\\n\\nbody {\\n\\tbackground-color: FloralWhite;\\n}\\n.container {\\n  display: block;\\n  position: relative;\\n  padding-left: 35px;\\n  margin-bottom: 12px;\\n  cursor: pointer;\\n  font-size: 22px;\\n  -webkit-user-select: none;\\n  -moz-user-select: none;\\n  -ms-user-select: none;\\n  user-select: none;\\n}\\n.container input {\\n  position: absolute;\\n  opacity: 0;\\n  cursor: pointer;\\n  height: 0;\\n  width: 0;\\n}\\n.checkmark {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  height: 25px;\\n  width: 25px;\\n  background-color: #eee;\\n}\\n.container:hover input ~ .checkmark {\\n  background-color: #ccc;\\n}\\n.container input:checked ~ .checkmark {\\n  background-color: DarkRed;\\n}\\n.checkmark:after {\\n  content: "";\\n  position: absolute;\\n  display: none;\\n}\\n.container input:checked ~ .checkmark:after {\\n  display: block;\\n}\\n.container .checkmark:after {\\n  left: 9px;\\n  top: 5px;\\n  width: 5px;\\n  height: 10px;\\n  border: solid white;\\n  border-width: 0 3px 3px 0;\\n  -webkit-transform: rotate(45deg);\\n  -ms-transform: rotate(45deg);\\n  transform: rotate(45deg);\\n}\\n\\nimg {\\n  border-radius: 10px;\\n  display: block;\\n  margin-left: auto;\\n  margin-right: auto;\\n  padding-bottom: 80px;\\n}\\n\\n</style>\\n\\n<body>\\n  <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: \\\'Questrial\\\', sans-serif;, sans-serif;">Pantry</h1>\\n\\n<img width="500px"\\n     height="400px"\\n     src="\', escape=False)'
+p95
+sI2
+S"response.write(URL('download', args=recipe.file))"
+p96
+sI3
+S'response.write(\'" alt="...">\\n\\n<form action="\', escape=False)'
+p97
+sI4
+S"response.write(URL('getRecipe'))"
+p98
+sI5
+S'response.write(\'" method="post">\\n\\n<label class="container">tomatoes\\n  <input type="checkbox" name="ingredient" value="tomatoes">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">tomato paste\\n  <input type="checkbox" name="ingredient" value="tomato paste">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">onions\\n  <input type="checkbox" name="ingredient" value="onions">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">chicken\\n  <input type="checkbox" name="ingredient" value="chicken">\\n  <span class="checkmark"></span>\\n</label>\\n</div>\\n\\n<label class="container">rice\\n  <input type="checkbox" name="ingredient" value="rice">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">black pepper\\n  <input type="checkbox" name="ingredient" value="black pepper">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">salt\\n  <input type="checkbox" name="ingredient" value="salt">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">ginger\\n  <input type="checkbox" name="ingredient" value="ginger">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cabbage\\n  <input type="checkbox" name="ingredient" value="cabbage">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">carrots\\n  <input type="checkbox" name="ingredient" value="carrots">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">potatoes\\n  <input type="checkbox" name="ingredient" value="potatoes">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">meat\\n  <input type="checkbox" name="ingredient" value="meat">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">fish\\n  <input type="checkbox" name="ingredient" value="fish">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">vegetable oil\\n  <input type="checkbox" name="ingredient" value="vegetable oil">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">red beans\\n  <input type="checkbox" name="ingredient" value="red beans">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">palm oil\\n  <input type="checkbox" name="ingredient" value="palm oil">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">black eyed peas\\n  <input type="checkbox" name="ingredient" value="black eyed peas">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">corn\\n  <input type="checkbox" name="ingredient" value="corn">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cassava dough\\n  <input type="checkbox" name="ingredient" value="cassava dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">green plaintain flour\\n  <input type="checkbox" name="ingredient" value="green plantain flour">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">maize dough\\n  <input type="checkbox" name="ingredient" value="maize dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">millet dough\\n  <input type="checkbox" name="ingredient" value="millet dough">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cayenne pepper\\n  <input type="checkbox" name="ingredient" value="cayenne pepper">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">dawadawa\\n  <input type="checkbox" name="ingredient" value="dawadawa">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">ayoyo leaves\\n  <input type="checkbox" name="ingredient" value="ayoyo leaves">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">cocoyam leaves\\n  <input type="checkbox" name="ingredient" value="cocoyam leaves">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<label class="container">eggs\\n  <input type="checkbox" name="ingredient" value="eggs">\\n  <span class="checkmark"></span>\\n</label>\\n\\n<input type="submit" value="Get Recipe">\\n\\n</form>\\n</body>\\n</html>\\n              \', escape=False)'
+p99
+ssg85
+S'()'
+p100
+sg87
+S'<module>'
+p101
+sasS'pyver'
+p102
+S'Python 2.7.10: /usr/bin/python (prefix: /System/Library/Frameworks/Python.framework/Versions/2.7)'
+p103
+sS'session'
+p104
+g59
+(S's\xba\x01\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.recipes.id&gt;0</div></td></tr></table></div>'
+tRp105
+sS'etype'
+p106
+S"<type 'exceptions.NameError'>"
+p107
+sS'date'
+p108
+S'Tue Apr  9 14:28:52 2019'
+p109
+sS'response'
+p110
+g59
+(S's\x91\x17\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x107d056c0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_ghanaiandishes</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div>: </div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>table3cols</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_ghanaiandishes</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/Users/bola/Desktop/web2py/applications/GhanaianDishes/sessions/048/1c7/127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40&#x27;, mode &#x27;rb+&#x27; at 0x107ccc150&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/Users/bola/Desktop/web2py/applications/GhanaianDishes/sessions/127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>c939634d7142b60b3c0adfdeabe30e31</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-91c7217b-ef50-43b5-9b33-4d435b98fb40</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_ghanaiandishes</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>GhanaianDishes</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/index.html</div></td></tr></table></div>'
+tRp111
+sS'locals'
+p112
+(dp113
+S'PY2'
+p114
+S'True'
+p115
+sS'OBJECT'
+p116
+S"<class 'gluon.html.OBJECT'>"
+p117
+sS'SQLDB'
+p118
+S"<class 'pydal.base.DAL'>"
+p119
+sg104
+S"<Storage {'_formkey[recipes/1]': ['4afa1c14-616f...37008', '7929043b-6307-462e-9de7-9289b24b9039']}>"
+p120
+sS'LINK'
+p121
+S"<class 'gluon.html.LINK'>"
+p122
+sS'BR'
+p123
+S"<class 'gluon.html.BR'>"
+p124
+sS'local_import'
+p125
+S'<function <lambda>>'
+p126
+sS'OPTGROUP'
+p127
+S"<class 'gluon.html.OPTGROUP'>"
+p128
+sS'__package__'
+p129
+S'None'
+p130
+sS'PRE'
+p131
+S"<class 'gluon.html.PRE'>"
+p132
+sS'IS_INT_IN_RANGE'
+p133
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p134
+sS'to_bytes'
+p135
+S'<function to_bytes>'
+p136
+sS'IS_LOWER'
+p137
+S"<class 'gluon.validators.IS_LOWER'>"
+p138
+sS'IS_STRONG'
+p139
+S"<class 'gluon.validators.IS_STRONG'>"
+p140
+sS'cache'
+p141
+S'<gluon.cache.Cache object>'
+p142
+sS'IS_IN_DB'
+p143
+S"<class 'gluon.validators.IS_IN_DB'>"
+p144
+sS'TAG'
+p145
+S'<gluon.html.__TAG__ object>'
+p146
+sS'SQLField'
+p147
+S"<class 'pydal.objects.Field'>"
+p148
+sS'BODY'
+p149
+S"<class 'gluon.html.BODY'>"
+p150
+sS'IS_DATE_IN_RANGE'
+p151
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p152
+sS'IFRAME'
+p153
+S"<class 'gluon.html.IFRAME'>"
+p154
+sS'URL'
+p155
+S'<function URL>'
+p156
+sS'__file__'
+p157
+S"'/Users/bola/Desktop/web2py/applications/GhanaianDishes/views/default/index.html'"
+p158
+sS'db'
+p159
+S'<DAL uri="sqlite://storage.sqlite">'
+p160
+sS'auth'
+p161
+S'<gluon.tools.Auth object>'
+p162
+sS'P'
+S"<class 'gluon.html.P'>"
+p163
+sS'TFOOT'
+p164
+S"<class 'gluon.html.TFOOT'>"
+p165
+sS'iteritems'
+p166
+S'<function <lambda>>'
+p167
+sS'XHTML'
+p168
+S"<class 'gluon.html.XHTML'>"
+p169
+sS'ON'
+p170
+g115
+sS'OL'
+p171
+S"<class 'gluon.html.OL'>"
+p172
+sS'TEXTAREA'
+p173
+S"<class 'gluon.html.TEXTAREA'>"
+p174
+sS'MENU'
+p175
+S"<class 'gluon.html.MENU'>"
+p176
+sS'IS_IMAGE'
+p177
+S"<class 'gluon.validators.IS_IMAGE'>"
+p178
+sS'EM'
+p179
+S"<class 'gluon.html.EM'>"
+p180
+sS'CODE'
+p181
+S"<class 'gluon.html.CODE'>"
+p182
+sS'HTTP'
+p183
+S"<class 'gluon.http.HTTP'>"
+p184
+sS'HR'
+p185
+S"<class 'gluon.html.HR'>"
+p186
+sS'IS_DATETIME'
+p187
+S"<class 'gluon.validators.IS_DATETIME'>"
+p188
+sS'reduce'
+p189
+S'<built-in function reduce>'
+p190
+sS'STYLE'
+p191
+S"<class 'gluon.html.STYLE'>"
+p192
+sS'LABEL'
+p193
+S"<class 'gluon.html.LABEL'>"
+p194
+sS'CLEANUP'
+p195
+S"<class 'gluon.validators.CLEANUP'>"
+p196
+sS'SELECT'
+p197
+S"<class 'gluon.html.SELECT'>"
+p198
+sS'CENTER'
+p199
+S"<class 'gluon.html.CENTER'>"
+p200
+sS'Auth'
+p201
+S"<class 'gluon.tools.Auth'>"
+p202
+sS'__builtins__'
+p203
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p204
+sS'HTML'
+p205
+S"<class 'gluon.html.HTML'>"
+p206
+sS'SQLFORM'
+p207
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p208
+sS'LOAD'
+p209
+S'<function LOAD>'
+p210
+sS'redirect'
+p211
+S'<function redirect>'
+p212
+sS'FIELDSET'
+p213
+S"<class 'gluon.html.FIELDSET'>"
+p214
+sS'IS_EQUAL_TO'
+p215
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p216
+sS'embed64'
+p217
+S'<function embed64>'
+p218
+sS'IS_LIST_OF'
+p219
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p220
+sS'INPUT'
+p221
+S"<class 'gluon.html.INPUT'>"
+p222
+sS'EMBED'
+p223
+S"<class 'gluon.html.EMBED'>"
+p224
+sS'H2'
+p225
+S"<class 'gluon.html.H2'>"
+p226
+sS'H3'
+p227
+S"<class 'gluon.html.H3'>"
+p228
+sS'BUTTON'
+p229
+S"<class 'gluon.html.BUTTON'>"
+p230
+sS'H1'
+p231
+S"<class 'gluon.html.H1'>"
+p232
+sS'H6'
+p233
+S"<class 'gluon.html.H6'>"
+p234
+sS'H4'
+p235
+S"<class 'gluon.html.H4'>"
+p236
+sS'H5'
+p237
+S"<class 'gluon.html.H5'>"
+p238
+sS'UL'
+p239
+S"<class 'gluon.html.UL'>"
+p240
+sS'IS_UPPER'
+p241
+S"<class 'gluon.validators.IS_UPPER'>"
+p242
+sS'xmlescape'
+p243
+S'<function xmlescape>'
+p244
+sS'IS_TIME'
+p245
+S"<class 'gluon.validators.IS_TIME'>"
+p246
+sS'OPTION'
+p247
+S"<class 'gluon.html.OPTION'>"
+p248
+sS'TITLE'
+p249
+S"<class 'gluon.html.TITLE'>"
+p250
+sS'CRYPT'
+p251
+S"<class 'gluon.validators.CRYPT'>"
+p252
+sS'IS_EMPTY_OR'
+p253
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p254
+sS'MARKMIN'
+p255
+S"<class 'gluon.html.MARKMIN'>"
+p256
+sS'__name__'
+p257
+S"'__restricted__'"
+p258
+sS'STRONG'
+p259
+S"<class 'gluon.html.STRONG'>"
+p260
+sS'COL'
+p261
+S"<class 'gluon.html.COL'>"
+p262
+sS'SCRIPT'
+p263
+S"<class 'gluon.html.SCRIPT'>"
+p264
+sS'TABLE'
+p265
+S"<class 'gluon.html.TABLE'>"
+p266
+sS'IS_IPV4'
+p267
+S"<class 'gluon.validators.IS_IPV4'>"
+p268
+sS'IS_LENGTH'
+p269
+S"<class 'gluon.validators.IS_LENGTH'>"
+p270
+sS'IS_IPV6'
+p271
+S"<class 'gluon.validators.IS_IPV6'>"
+p272
+sS'XML'
+p273
+S"<class 'gluon.html.XML'>"
+p274
+sS'B'
+S"<class 'gluon.html.B'>"
+p275
+sS'IMG'
+p276
+S"<class 'gluon.html.IMG'>"
+p277
+sS'SQLTABLE'
+p278
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p279
+sS'IS_MATCH'
+p280
+S"<class 'gluon.validators.IS_MATCH'>"
+p281
+sS'IS_ALPHANUMERIC'
+p282
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p283
+sS'SPAN'
+p284
+S"<class 'gluon.html.SPAN'>"
+p285
+sS'IS_JSON'
+p286
+S"<class 'gluon.validators.IS_JSON'>"
+p287
+sS'IS_IPADDRESS'
+p288
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p289
+sS'IS_SLUG'
+p290
+S"<class 'gluon.validators.IS_SLUG'>"
+p291
+sS'BEAUTIFY'
+p292
+S"<class 'gluon.html.BEAUTIFY'>"
+p293
+sS'META'
+p294
+S"<class 'gluon.html.META'>"
+p295
+sS'recipes'
+p296
+S'<Rows (5)>'
+p297
+sS'IS_DATE'
+p298
+S"<class 'gluon.validators.IS_DATE'>"
+p299
+sS'IS_EMAIL'
+p300
+S"<class 'gluon.validators.IS_EMAIL'>"
+p301
+sS'IS_NOT_EMPTY'
+p302
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p303
+sS'xrange'
+p304
+S"<type 'xrange'>"
+p305
+sS'TBODY'
+p306
+S"<class 'gluon.html.TBODY'>"
+p307
+sS'CAT'
+p308
+S"<class 'gluon.html.CAT'>"
+p309
+sS'Field'
+p310
+S"<class 'pydal.objects.Field'>"
+p311
+sS'IS_LIST_OF_EMAILS'
+p312
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p313
+sg58
+S"<Storage {'function': 'index', 'cookies': <Simpl...False, 'is_https': False, 'client': '127.0.0.1'}>"
+p314
+sS'DIV'
+p315
+S"<class 'gluon.html.DIV'>"
+p316
+sS'LEGEND'
+p317
+S"<class 'gluon.html.LEGEND'>"
+p318
+sS'to_native'
+p319
+S'<function to_native>'
+p320
+sS'COLGROUP'
+p321
+S"<class 'gluon.html.COLGROUP'>"
+p322
+sS'DAL'
+p323
+S"<class 'pydal.base.DAL'>"
+p324
+sS'ASSIGNJS'
+p325
+S'<function ASSIGNJS>'
+p326
+sS'TR'
+p327
+S"<class 'gluon.html.TR'>"
+p328
+sS'LI'
+p329
+S"<class 'gluon.html.LI'>"
+p330
+sS'TH'
+p331
+S"<class 'gluon.html.TH'>"
+p332
+sS'TD'
+p333
+S"<class 'gluon.html.TD'>"
+p334
+sS'IS_URL'
+p335
+S"<class 'gluon.validators.IS_URL'>"
+p336
+sS'A'
+S"<class 'gluon.html.A'>"
+p337
+sS'HEAD'
+p338
+S"<class 'gluon.html.HEAD'>"
+p339
+sS'IS_DATETIME_IN_RANGE'
+p340
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p341
+sS'FORM'
+p342
+S"<class 'gluon.html.FORM'>"
+p343
+sS'I'
+S"<class 'gluon.html.I'>"
+p344
+sS'IS_NOT_IN_DB'
+p345
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p346
+sg110
+S"<Storage {'body': <cStringIO.StringO object at 0...> at 0x109aee500>, 'view': 'default/index.html'}>"
+p347
+sS'THEAD'
+p348
+S"<class 'gluon.html.THEAD'>"
+p349
+sS'ANY_OF'
+p350
+S"<class 'gluon.validators.ANY_OF'>"
+p351
+sS'IS_NULL_OR'
+p352
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p353
+sS'IS_FLOAT_IN_RANGE'
+p354
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p355
+sS'IS_EXPR'
+p356
+S"<class 'gluon.validators.IS_EXPR'>"
+p357
+sS'T'
+S'<gluon.languages.translator object>'
+p358
+sS'IS_IN_SET'
+p359
+S"<class 'gluon.validators.IS_IN_SET'>"
+p360
+sS'IS_UPLOAD_FILENAME'
+p361
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p362
+sS'TT'
+p363
+S"<class 'gluon.html.TT'>"
+p364
+sS'IS_DECIMAL_IN_RANGE'
+p365
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p366
+sssS'traceback'
+p367
+S'Traceback (most recent call last):\n  File "/Users/bola/Desktop/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/Users/bola/Desktop/web2py/applications/GhanaianDishes/views/default/index.html", line 2, in <module>\n    <head>\nNameError: name \'recipe\' is not defined\n'
+p368
+s.
