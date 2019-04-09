@@ -1,0 +1,8 @@
+<h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
+
+        {{for recipe in recipes:}}    
+              <img width="500px"
+                   height="400px"
+                   src="{{=URL('download', args=recipe.file)}}" alt="...">
+
+        {{pass}}
