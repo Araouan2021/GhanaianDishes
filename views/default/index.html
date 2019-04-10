@@ -72,21 +72,22 @@ img {
   background-color: DarkRed;
   border: none;
   color: white;
-  padding: 20px 32px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 50%;
+  width: 10%;
 }
 
 </style>
 
 <body>
   <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
-<img src="" width="300px" height="200px">
+
 
 <form action="{{=URL('getRecipe')}}" method="post">
 
@@ -222,6 +223,21 @@ img {
 </label>
 
 <label class="container">eggs
+  <input type="checkbox" name="ingredient" value="eggs">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">kontomire
+  <input type="checkbox" name="ingredient" value="eggs">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">egusi
+  <input type="checkbox" name="ingredient" value="eggs">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">kidney beans
   <input type="checkbox" name="ingredient" value="eggs">
   <span class="checkmark"></span>
 </label>

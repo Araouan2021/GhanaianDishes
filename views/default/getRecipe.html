@@ -1,9 +1,26 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+<style>
+
+body {
+	background-color: FloralWhite;
+}
+
+img {
+    border-radius: 20px;
+}
+</style>
+
+
 <h1 style="text-align: center; color: DarkRed; font-size: 60px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
-
-
-        {{for recipe in recipes:}}    
-              <img width="500px"
-                   height="400px"
-                   src="{{=URL('download', args=recipe.file)}}" alt="...">
+      
+      {{for recipe in recipes:}}
+          <a href="{{=URL('show', args=recipe.id)}}">
+              <img src="{{=URL('download', args=recipe.file)}}" 
+                   width="400px"
+                   height="300px"
+                   border-radius="15px"
+                
         {{pass}}
-
