@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <style>
 
@@ -20,11 +21,8 @@ img {
           <a href="{{=URL('show', args=recipe.id)}}">
               <img src="{{=URL('download', args=recipe.file)}}" 
                    width="400px"
-                   height="300px"
-                   margin="20px"
-                   border-radius="15px"
-                   text-align="center">
-                <h2>={{=LI(A(recipes))}}</h2>
+                   height="300px">
+                <h2 style="font-family: 'Ubuntu', sans-serif;">={{=LI(A(recipes))}}</h2>
                 <a>
                 
                 
