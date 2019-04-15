@@ -7,6 +7,12 @@
 body {
 	background-color: FloralWhite;
 }
+
+.newspaper {
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+  -moz-column-count: 4; /* Firefox */
+  column-count: 4;
+}
 .container {
   display: block;
   position: relative;
@@ -69,6 +75,7 @@ img {
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+  margin: : 80px;
 }
 
 .button {
@@ -94,7 +101,11 @@ img {
   <img src="{{=URL('static', 'images/jellof.jpeg')}}" alt="jellof" style="width: 1000px; height: 600px;">
 
 
+
+
 <form action="{{=URL('getRecipe')}}" method="post">
+
+<div class="newspaper">
 
 <label class="container">tomatoes
   <input type="checkbox" name="ingredient" value="tomatoes">
@@ -233,19 +244,25 @@ img {
 </label>
 
 <label class="container">kontomire
-  <input type="checkbox" name="ingredient" value="eggs">
+  <input type="checkbox" name="ingredient" value="kontomire">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">egusi
-  <input type="checkbox" name="ingredient" value="eggs">
+  <input type="checkbox" name="ingredient" value="egusi">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">kidney beans
-  <input type="checkbox" name="ingredient" value="eggs">
+  <input type="checkbox" name="ingredient" value="kidney beans">
   <span class="checkmark"></span>
 </label>
+
+<label class="container">gari
+  <input type="checkbox" name="ingredient" value="gari">
+  <span class="checkmark"></span>
+</label>
+</div>
 
 <input type="submit" class="button" value="Get Recipe">
 
