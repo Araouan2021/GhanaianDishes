@@ -25,7 +25,6 @@ def delete():
 
 def getRecipe():
     ingredients = request.vars.ingredient
-    print(ingredients)
     currentIndex = 0
     recipes = ""
 
@@ -40,8 +39,14 @@ def getRecipe():
                 recipes = filter(lambda recipe: ingredient in recipe.ingredients, recipes)
             else:
                 break
+
+    if type(ingredients) is list:
+        ingredientString = ", ".join(ingredients)
+    else:
+        ingredientString = ingredients
+    
             
-    return dict(recipes=recipes)
+    return dict(recipes=recipes, ingredients=ingredientString)
         
 
 
