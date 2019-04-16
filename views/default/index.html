@@ -97,11 +97,12 @@ img {
 </style>
 
 <body>
-  <h1 style="text-align: center; color: DarkRed; font-size: 80px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
-
-  <img src="{{=URL('static', 'images/jellof.jpeg')}}" alt="jellof" style="width: 1000px; height: 600px;">
-
-
+  <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
+  {{for recipe in recipes:}}
+        <div class="recipe-details">
+          <img src="{{=URL('download', args=recipe.file)}}" 
+             class="img-responsive img-thumbnail" 
+  {{pass}}>
   <div class="container">
     <div class="row">
       <div class="recipe-form">
@@ -272,6 +273,41 @@ img {
 
           <label class="checkbox-inline">gari
             <input type="checkbox" name="ingredient" value="gari">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">crab
+            <input type="checkbox" name="ingredient" value="crab">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">peanuts
+            <input type="checkbox" name="ingredient" value="peanuts">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">paprika
+            <input type="checkbox" name="ingredient" value="paprika">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">nutmeg
+            <input type="checkbox" name="ingredient" value="nutmeg">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">garlic powder
+            <input type="checkbox" name="ingredient" value="garlic powder">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">cloves
+            <input type="checkbox" name="ingredient" value="cloves">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkbox-inline">cinammon
+            <input type="checkbox" name="ingredient" value="cinammon">
             <span class="checkmark"></span>
           </label>
           </div>
