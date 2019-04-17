@@ -36,13 +36,13 @@ h1 {
       {{for recipe in recipes:}}
         <div class="recipe-details">
           <img src="{{=URL('download', args=recipe.file)}}" 
-             class="img-responsive img-thumbnail" 
-          >
+             class="img-responsive img-thumbnail">
+          
           <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;"">{{=recipe.title}}</h2>
-          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Ingredients></u><br>{{=recipe.ingredients}}</p>
-          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;">Method><br>{{=recipe.method}}</p>
-          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;">Serving size><br>{{=recipe.size}}</p>
-          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;">Time><br>{{=recipe.time}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Ingredients</u><br>{{=recipe.ingredients}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Method</u><br>{{=recipe.method}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Serving size</u><br>{{=recipe.size}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Time</u><br>{{=recipe.time}}</p>
         </div>
       {{pass}}
     </div>
