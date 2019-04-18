@@ -10,7 +10,7 @@ body {
 	background-color: FloralWhite;
 }
 
-/*.container {
+.container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -25,13 +25,7 @@ body {
   color: SaddleBrown;
   font-size: 30px;
 }
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -40,31 +34,6 @@ body {
   width: 25px;
   background-color: #eee;
 }
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.container input:checked ~ .checkmark {
-  background-color: DarkRed;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}*/
 
 img {
   display: block;
@@ -78,9 +47,7 @@ img {
   margin: : 80px;
 }
 
-
-
-/*.button {
+.button {
   background-color: DarkRed;
   font-family: 'Questrial';
   border: none;
@@ -94,41 +61,26 @@ img {
   cursor: pointer;
   border-radius: 50%;
   width: 10%;
-}*/
-
-.grid-container > div {
-  background-color: rgba(white;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
 }
 
 </style>
 
 <body>
   <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
+
   {{for recipe in recipes:}}
         <div class="recipe-details">
           <img src="{{=URL('download', args=recipe.file)}}" 
              class="img-responsive img-thumbnail" 
   {{pass}}>
+  <img src="{{=URL('static"
+</div>
   <div class="container">
     <div class="row">
       <div class="recipe-form">
         <form action="{{=URL('getRecipe')}}" method="post" class="form">
           <label class="checkbox-inline">
-            <input type="checkbox" id="" value="option1"> 1
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="" value="option2"> 2
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="" value="option3"> 3
-          </label>
-
-
-
-
+      
           <label class="checkbox-inline">tomatoes
             <input type="checkbox" name="ingredient" value="tomatoes" checked="">
             <span class="checkmark"></span>
