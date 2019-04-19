@@ -2,6 +2,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{=URL('static', 'css/bootstrap.min.css')}}">
 </head>
 <style>
@@ -26,49 +27,45 @@ body {
   font-size: 30px;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
+  width: 300px;
+  height: 300px;
   margin: : 80px;
 }
 
 .button {
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight: bold;
   background-color: DarkRed;
-  font-family: 'Questrial';
   border: none;
   color: white;
-  padding: 20px;
+  padding: 60 px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 25px;
+  margin: 60px;
   cursor: pointer;
-  border-radius: 50%;
-  width: 10%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 </style>
 
 <body>
-  <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
+  <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; padding: 40px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
 
-  <img src="{{=URL('static', 'images/Fotojet.jpg')}}" alt="Ghanaian recipes" height="300" width="200">
+  <img src="{{=URL('static', 'images/Fotojet.jpg')}}" alt="Ghanaian recipes">
 
   <div class="container">
     <div class="row">
@@ -76,194 +73,231 @@ img {
         <form action="{{=URL('getRecipe')}}" method="post" class="form">
           <label class="checkbox-inline">
       
-          <label class="checkbox-inline">tomatoes
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="tomatoes" checked="">
+            tomatoes
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">tomato paste
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="tomato paste">
+            tomato paste
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">onions
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="onions">
+            onions
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">chicken
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="chicken">
+            chicken
             <span class="checkmark"></span>
           </label>
           </div>
 
-          <label class="checkbox-inline">rice
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="rice">
+            rice
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">black pepper
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="black pepper">
+            black pepper
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">salt
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="salt">
+            salt
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">ginger
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="ginger">
+            ginger
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cabbage
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cabbage">
+            cabbage
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">carrots
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="carrots">
+            carrots
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">potatoes
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="potatoes">
+            potatoes
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">meat
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="meat">
+            meat
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">fish
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="fish">
+            fish
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">vegetable oil
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="vegetable oil">
+            vegetable oil
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">red beans
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="red beans">
+            red beans
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">palm oil
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="palm oil">
+            palm oil
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">black eyed peas
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="black eyed peas">
+            black eyed peas
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">corn
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="corn">
+            corn
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cassava dough
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cassava dough">
+            cassava dough
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">green plaintain flour
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="green plantain flour">
+            green plaintain flour
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">maize dough
             <input type="checkbox" name="ingredient" value="maize dough">
+            maize dough
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">millet dough
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="millet dough">
+            millet dough
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cayenne pepper
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cayenne pepper">
+            cayenne pepper
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">dawadawa
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="dawadawa">
+            dawadawa
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">ayoyo leaves
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="ayoyo leaves">
+            ayoyo leaves
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cocoyam leaves
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cocoyam leaves">
+            cocoyam leaves
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">eggs
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="eggs">
+            eggs
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">kontomire
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="kontomire">
+            kontomire
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">egusi
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="egusi">
+            egusi
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">kidney beans
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="kidney beans">
+            kidney beans
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">gari
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="gari">
+            gari
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">crab
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="crab">
+            crab
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">peanuts
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="peanuts">
+            peanuts
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">paprika
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="paprika">
+            paprika
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">nutmeg
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="nutmeg">
+            nutmeg
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">garlic powder
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="garlic powder">
+            garlic powder
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cloves
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cloves">
+            cloves
             <span class="checkmark"></span>
           </label>
 
-          <label class="checkbox-inline">cinammon
+          <label class="checkbox-inline">
             <input type="checkbox" name="ingredient" value="cinammon">
+            cinammon
             <span class="checkmark"></span>
           </label>
           </div>
