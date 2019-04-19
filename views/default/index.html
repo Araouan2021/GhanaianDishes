@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  margin-top: 50px;
   display: block;
   position: relative;
   padding-left: 35px;
@@ -37,8 +38,14 @@ img {
   padding: 5px;
   width: 400px;
   height: 400px;
-  margin: : 80px;
-  margin-bottom: 100px;
+  margin: : 60px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: DarkRed;
+  font-family: 'Nothing You Could Do', cursive;
+  text-align: center;
 }
 
 .button {
@@ -52,7 +59,7 @@ img {
   text-decoration: none;
   display: inline-block;
   font-size: 25px;
-  margin: 60px;
+  margin: 70px;
   cursor: pointer;
   width: 15%;
   padding: 15px;
@@ -68,6 +75,8 @@ img {
   <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; padding: 40px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
 
   <img src="{{=URL('static', 'images/Fotojet.jpg')}}" alt="Ghanaian recipes">
+
+  <h2>Please select at least one ingredient in order to view a recipe!</h2>
 
   <div class="container">
     <div class="row">
