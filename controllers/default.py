@@ -46,6 +46,30 @@ def getRecipe():
     
             
     return dict(recipes=recipes, ingredients=ingredientString)
+
+    """def getRecipe():
+    ingredients = request.vars.ingredient
+    currentIndex = 0
+    recipes = ""
+    if type(ingredients) is list:
+        for ingredient in ingredients:
+            if currentIndex==0:
+                query = db.recipes.ingredients.contains(ingredient)
+                recipes = db(query).select()
+                currentIndex = 9;
+            else:
+                if len(recipes)>0:
+                    recipes = filter(lambda recipe: ingredient in recipe.ingredients, recipes)
+                else:
+                    break
+        ingredientString = ", ".join(ingredients)
+    else:
+        query = db.recipes.ingredients.contains(ingredients)
+        recipes = db(query).select()
+        ingredientString = ingredients
+    
+            
+    return dict(recipes=recipes, ingredients=ingredientString)"""
         
 
 
