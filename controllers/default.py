@@ -46,6 +46,13 @@ def getRecipe():
     
             
     return dict(recipes=recipes, ingredients=ingredientString)
+
+def create():
+    form = SQLFORM(db.recipes).process(next=URL('index'))
+    return dict(form=form)
+
+      
+    
         
 
 
