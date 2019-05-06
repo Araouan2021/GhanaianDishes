@@ -51,6 +51,11 @@ def create():
     form = SQLFORM(db.recipes).process(next=URL('index'))
     return dict(form=form)
 
+#@auth.requires_membership('manager')
+def manage():
+    grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])
+    return dict(grid=grid)
+
       
     
         
