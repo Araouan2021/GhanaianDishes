@@ -26,9 +26,14 @@ h1 {
 
 h4 {
   text-align: center;
-  color: DarkRed;
+  color: SaddleBrown;
+  font-family: 'Allura', cursive;
+  font-weight: bold;
+  font-size: 50px; 
+}
+
+.mdi {
   font-size: 30px;
-  font-family: 'Questrial';
 }
 
 </style>
@@ -54,12 +59,13 @@ h4 {
       {{pass}}
 
       <hr>
-<div class="container">
-  <div class="row">
-    <div class="col-md-10"></div>
-    <div class="col-md-6">
-     <h4>Reviews</h4>
+      <h4>Reviews</h4>
+      {{for recipe in recipes:}}
         <div class="recipe-details">
+          <div class="container">
+            <div class="row">
+             <div class="col-md-10"></div>
+             <div class="col-md-6">
           <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Review</u><br>{{=recipe.review}}</p>
       <p><span class="mdi mdi-silverware-fork"></span></p> 
         </div>
