@@ -10,7 +10,6 @@ db.define_table('recipes',
                 Field('method', 'text'),
                 Field('size'),
                 Field('time'),
-                Field('review', 'text'),
                 Field('file', 'upload'),
                 auth.signature
                 )

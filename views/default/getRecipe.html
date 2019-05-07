@@ -20,6 +20,13 @@ body {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
+.recipe-reviews {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 .2rem 1rem rgba(0,0,0,.10)!important;
+}
+
 h1 {
   padding: 50px;
 }
@@ -58,19 +65,5 @@ h4 {
         </div>
       {{pass}}
 
-      <hr>
-      <h4>Reviews</h4>
-      {{for recipe in recipes:}}
-        <div class="recipe-details">
-          <div class="container">
-            <div class="row">
-             <div class="col-md-10"></div>
-             <div class="col-md-6">
-          <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Review</u><br>{{=recipe.review}}</p>
-      <p><span class="mdi mdi-silverware-fork"></span></p> 
-        </div>
-      {{pass}}
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-</div>
+      
+      

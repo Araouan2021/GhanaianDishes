@@ -47,7 +47,7 @@ def getRecipe():
             
     return dict(recipes=recipes, ingredients=ingredientString)
 
-def create():
+def postRecipe():
     form = SQLFORM(db.recipes).process(next=URL('index'))
     return dict(form=form)
 
