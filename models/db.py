@@ -11,7 +11,5 @@ db.define_table('recipes',
                 Field('size'),
                 Field('time'),
                 Field('file', 'upload'),
-                auth.signature
+                auth.signature              
                 )
-
-

@@ -1,35 +1,12 @@
 {{extend 'layout.html'}}
-<!DOCTYPE html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-</head>
-<style>
 
-h1 {
-	font-family: 'Damion', sans-serif;
-	color: DarkRed;
-}
-
-body {
-	color: DarkRed;
-	font-size: 25px;
-	font-family: 'Damion', sans-serif;
-}
-
-input[type=submit] {
-	background-color: DarkRed;
-	font-family: 'Damion', sans-serif;
-	font-size: 20px;
-    color: white;
-    padding: 12px 20px;
-    margin: 20px;
-    border: none;
-    border-radius: 4px;
-}
-
-</style>
-<body>
-<h1>Leave a review</h1>
-{{=form}}
-</body>
-</html>
+{{if len(reviews):}}
+  <h2>Reviews</h2>
+  {{for review in reviews:}}
+    <p>{{=review.author}} says <i>{{=review.body}}</i></p>
+  {{pass}}
+{{else:}}
+  <h2>No review posted yet</h2>
+  {{pass}}
+  </h2>Post a review<h2>
+  {{=form}}
