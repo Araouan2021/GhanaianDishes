@@ -11,6 +11,52 @@ body {
 	background-color: FloralWhite;
 }
 
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: DarkRed;
+    }
+li {
+      float: left;
+    }
+li {
+      display: inline;
+    }
+li a {
+      display: block;
+      color: White;
+      font-family: 'Playball', cursive;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+li a:hover {
+      background-color: DarkRed;
+    }
+input[type=text] {
+     float: right;
+     color: Gray;
+     font-family: 'Playball', cursive;
+     padding: 6px;
+     border: none;
+     margin-top: 8px;
+     margin-right: 16px;
+     font-size: 50px;
+}
+input[type=text] {
+  font-family: 'Playball', cursive;
+  float: right;
+  padding: 6px;
+  border: solid 1px;
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-right: 14px;
+  font-size: 20px;
+}
+
 .container {
   margin-top: 50px;
   display: block;
@@ -112,6 +158,10 @@ h2 {
 </style>
 
 <body>
+<ul>
+    <li><a href="{{=URL('postRecipe')}}">Post Recipe</a></li>
+    <li><a href="{{=URL('postReview')}}">Post Review</a></li>
+  </ul>
   <h1 style="text-align: center; color: DarkRed; font-weight: bold; font-size: 80px; padding: 40px; font-family: 'Questrial', sans-serif;, sans-serif;">Pantry</h1>
 
   <img src="{{=URL('static', 'images/Fotojet.jpg')}}" alt="Ghanaian recipes">
@@ -654,8 +704,6 @@ h2 {
           </div>
 
           <input type="submit" class="button" value="Get Recipe">
-
-          <a style="color: DarkRed"; href="{{=URL('postRecipe')}}">Post Recipe</a>
 
         </form>
       </div>

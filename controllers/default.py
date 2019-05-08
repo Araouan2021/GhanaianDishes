@@ -52,10 +52,10 @@ def postRecipe():
     return dict(form=form)
 
 def postReview():
-    form = SQLFORM(db.review)
+    form = SQLFORM(db.reviews)
     if form.process().accepted:
         response.flash = 'your review has been posted'
-    reviews = db(db.review.recipe_id == recipe.id).select(orderby=db.review.id)
+    reviews = db(db.reviews.recipe_id == recipe.id).select(orderby=db.reviews.id)
     return dict(recipe=recipe, reviews=reviews, form=form)
     
 #@auth.requires_membership('manager')

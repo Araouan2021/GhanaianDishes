@@ -4732,3 +4732,67 @@ success!
 success!
 success!
 success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2019-05-08T12:44:53.950500
+ALTER TABLE "reviews" ADD "modified_by" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ;
+timestamp: 2019-05-08T12:44:53.952446
+ALTER TABLE "reviews" ADD "is_active" CHAR(1);
+timestamp: 2019-05-08T12:44:53.954570
+ALTER TABLE "reviews" ADD "created_by" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ;
+timestamp: 2019-05-08T12:44:53.956383
+ALTER TABLE "reviews" ADD "reviews" CHAR(512);
+timestamp: 2019-05-08T12:44:53.958038
+ALTER TABLE "reviews" ADD "created_on" TIMESTAMP;
+timestamp: 2019-05-08T12:44:53.959714
+ALTER TABLE "reviews" ADD "file" CHAR(512);
+timestamp: 2019-05-08T12:44:53.962174
+ALTER TABLE "reviews" ADD "modified_on" TIMESTAMP;
+success!
+success!
+success!
+success!
+success!
+timestamp: 2019-05-08T12:46:13.425387
+ALTER TABLE "reviews" ADD "posts" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
