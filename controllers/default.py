@@ -51,13 +51,6 @@ def postRecipe():
     form = SQLFORM(db.recipes).process(next=URL('index'))
     return dict(form=form)
 
-def postReview():
-    form = SQLFORM(db.reviews)
-    if form.process().accepted:
-        response.flash = 'your review has been posted'
-    reviews = db(db.reviews.recipe_id == recipe.id).select(orderby=db.reviews.id)
-    return dict(recipe=recipe, reviews=reviews, form=form)
-    
 #@auth.requires_membership('manager')
 def manage():
     grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])

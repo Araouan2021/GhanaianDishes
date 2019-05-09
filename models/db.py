@@ -14,8 +14,3 @@ db.define_table('recipes',
                 auth.signature              
                 )
 
-db.define_table('reviews',
-                Field('posts'),
-                Field('file', 'upload'),
-                auth.signature              
-                )
