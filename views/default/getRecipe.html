@@ -72,7 +72,7 @@ h4 {
       <hr>
       {{for recipe in recipes:}}
         <div class="recipe-details">
-          <img src="{{=URL('download', args=recipe.file)}}" 
+        <img src="{{=URL('download', args=recipe.file)}}"
              class="img-responsive img-thumbnail">
           
           <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;"">{{=recipe.title}}</h2>

@@ -5,13 +5,14 @@ auth = Auth(db)
 auth.define_tables(username=False)
 
 db.define_table('recipes',
-                Field('title', unique=True),
+                Field('title',),
                 Field('ingredients', 'text'),
                 Field('method', 'text'),
                 Field('size'),
                 Field('time'),
                 Field('file', 'upload'),
-                format = '%(title)s')
+                auth.signature              
+                )
                 
 db.define_table('review',
                 Field('recipes_id', 'reference recipes'),
