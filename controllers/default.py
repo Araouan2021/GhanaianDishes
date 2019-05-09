@@ -56,17 +56,11 @@ def manage():
     grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])
     return dict(grid=grid)
 
-#@auth.requires_login()
-def postReview():
-    recipes = db.recipes(request.args(0, cast=int)) or redirect(URL('postReview'))
-    db.review.recipes_id.default = recipes.id
-    form = SQLFORM(db.review)
-    if form.process().accepted:
-        response.flash = 'your review has been posted'
-    reviews = db(db.review.recipes_id == recipes.id).select(orderby=db.review.id)
-    return dict(recipes=recipes, reviews=reviews, form=form)
+def show():
+    recipes = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
+    return dict(recipes=recipes)
 
-      
+
     
         
 

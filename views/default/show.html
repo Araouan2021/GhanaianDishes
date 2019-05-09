@@ -1,0 +1,27 @@
+{{extend 'layout.html'}}
+<head>
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<style>
+
+body {
+	background-color: FloralWhite;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	color: DarkRed
+	margin: 40px;
+	line-height: 1px;
+}
+</style>
+</head>
+<h1>Title: {{=recipes.title}}</h1>
+<h1>Ingedients: {{=recipes.ingredients}}</h1>
+<h1>Method: {{=recipes.method}}<h1>
+<h1>Size: {{=recipes.size}}</h1>
+<h1>Time: {{=recipes.time}}</h1>
+<div style="text-align:center">
+<img width="300px"
+     src="{{=URL('download', args=recipes.file)}}" />
+</div>
