@@ -35,12 +35,28 @@ h4 {
   text-align: center;
   color: SaddleBrown;
   font-family: 'Allura', cursive;
-  font-weight: bold;
   font-size: 50px; 
 }
 
 .mdi {
   font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 </style>
@@ -62,17 +78,27 @@ h4 {
           <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Method</u><br>{{=recipe.method}}</p>
           <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Serving size</u><br>{{=recipe.size}}</p>
           <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Time</u><br>{{=recipe.time}}</p>
+        </div>
       {{pass}}
-</div>
+
       <hr>
+
+      <h4>Reviews</h4>
+
 <div class="container">
   <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
   <div class="recipe-reviews">
   <p style="font-family: 'Molengo', sans-serif; font=size: 30px;"><u>Reviews</u><br>{{=recipe.reviews}}</p>
   <div class="mdi mdi-silverware-fork">
+  </div>
   <div class="mdi mdi-silverware-fork">
+  </div>
   <div class="mdi mdi-silverware-fork">
+  </div>
   <div class="mdi mdi-silverware-fork">
+  </div>
 </div>
       
 
