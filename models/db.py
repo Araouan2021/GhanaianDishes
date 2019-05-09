@@ -13,3 +13,10 @@ db.define_table('recipes',
                 Field('file', 'upload'),
                 auth.signature              
                 )
+
+db.define_table('review',
+                Field('recipes_id', 'reference recipes'),
+                Field('author'),
+                Field('email'),
+                Field('body', 'text'))
+

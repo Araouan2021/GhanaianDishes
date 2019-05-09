@@ -4941,3 +4941,38 @@ success!
 success!
 success!
 success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2019-05-09T12:57:07.965714
+CREATE TABLE "review"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "recipes_id" INTEGER REFERENCES "recipes" ("id") ON DELETE CASCADE  ,
+    "author" CHAR(512),
+    "email" CHAR(512),
+    "body" TEXT
+);
+success!
+success!
+success!
+success!
+success!
