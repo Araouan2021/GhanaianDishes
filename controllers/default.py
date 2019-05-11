@@ -51,14 +51,10 @@ def postRecipe():
     form = SQLFORM(db.recipes).process(next=URL('index'))
     return dict(form=form)
 
-#@auth.requires_membership('manager')
+@auth.requires_membership('manager')
 def manage():
     grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])
     return dict(grid=grid)
-
-def show():
-    recipes = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
-    return dict(recipes=recipes)
 
 
     
