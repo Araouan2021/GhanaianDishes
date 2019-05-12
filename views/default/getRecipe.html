@@ -69,8 +69,8 @@ h4 {
       <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">Showing Recipes For: &nbsp; {{=ingredients}} </h3>
       <hr>
       {{for recipe in recipes:}}
-      <a href="{{=URL('show', args=recipe.id)}}">
         <div class="recipe-details">
+         <a href="{{=URL('show', args=recipe.id)}}">
         <img src="{{=URL('download', args=recipe.file)}}"
              class="img-responsive img-thumbnail">
         </a>
