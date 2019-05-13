@@ -50,21 +50,24 @@ h1 {
 
 </style>
 
-<body>
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h1 style="text-align: center; color: DarkRed; font-size: 75px; font-family: 'Questrial', sans-serif;, sans-serif; font-weight: bold;">Pantry</h1>
-      <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">Showing Recipes For: &nbsp; {{=ingredients}} </h3>
+      <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">Showing Recipes For: &nbsp; {{=recipe.ingredients}} </h3>
       <hr>
         <div class="recipe-details">
         <img src="{{=URL('download', args=recipe.file)}}"
-             class="img-responsive img-thumbnail">      
+             class="img-responsive img-thumbnail"> 
           <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;">{{=recipe.title}}</h2>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Title</u><br>{{=recipe.title}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Ingredients</u><br>{{=recipe.ingredients}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Method</u><br>{{=recipe.method}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Serving size</u><br>{{=recipe.size}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Time</u><br>{{=recipe.time}}</p>
+          </div>
+          </div>
+          <form>
+          <div id="main"></div>
         </div>
         </div>
-</body>
