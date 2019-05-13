@@ -27,6 +27,13 @@ body {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
+.recipe-reviews {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
 h1 {
   padding: 50px;
 }
@@ -54,7 +61,7 @@ h1 {
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h1 style="text-align: center; color: DarkRed; font-size: 75px; font-family: 'Questrial', sans-serif;, sans-serif; font-weight: bold;">Pantry</h1>
-      <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">Showing Recipes For: &nbsp; {{=recipe.ingredients}} </h3>
+      <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">{{=recipe.title}}</h3>
       <hr>
         <div class="recipe-details">
         <img src="{{=URL('download', args=recipe.file)}}"
@@ -67,7 +74,4 @@ h1 {
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Time</u><br>{{=recipe.time}}</p>
           </div>
           </div>
-          <form>
-          <div id="main"></div>
-        </div>
-        </div>
+          </div>

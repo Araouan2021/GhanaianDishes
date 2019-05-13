@@ -1,7 +1,7 @@
 
 def show():
-    recipes = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
-    return dict(recipes=recipes)
+    recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
+    return dict(recipe=recipe)
 
 def download():
     return response.download(request, db)
@@ -55,6 +55,7 @@ def postRecipe():
 def manage():
     grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])
     return dict(grid=grid)
+
 
 
     
