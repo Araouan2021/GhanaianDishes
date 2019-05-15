@@ -3,6 +3,11 @@ def show():
     recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
     return dict(recipe=recipe)
 
+def postReview():
+    recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
+    return dict(recipe=recipe)
+
+
 def download():
     return response.download(request, db)
 

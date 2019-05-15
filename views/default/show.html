@@ -13,7 +13,7 @@ h1 {
 	font-family:  'Damion', cursive;
 	font-size: 25px;
 	color: DarkRed
-	margin: 40px;
+	margin: 60px;
 	line-height: 1px;
 }
 
@@ -75,7 +75,7 @@ label {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   margin: 30px;
   cursor: pointer;
   width: 7%;
@@ -114,12 +114,12 @@ h6 {
   <h5>LEAVE A REVIEW</h5>
       <hr>
   <div class="form-group">
-  <form action="{{=URL('create')}}" method="post" class="form">
+  <form action="{{=URL('postReview')}}" method="post" class="form">
   <label for="review">Review</label>
   <textarea class="form-control" rows="5" id="review"></textarea>
-  </div>
+  <input type="submit" class="button" value="submit">
   </form>
-  <input type="submit" class="button" value="Submit">
+  </div>
   <h6>REVIEWS</h6>
   <hr>
   
