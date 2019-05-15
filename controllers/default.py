@@ -5,7 +5,7 @@ def show():
 
 def postReview():
     recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
-    return dict(recipe=recipe)
+    return dict(recipes=recipe)
 
 
 def download():
