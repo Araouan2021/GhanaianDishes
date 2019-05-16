@@ -5,7 +5,15 @@ def show():
 
 def postReview():
     recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
-    return dict(recipes=recipe)
+    body = request.vars.body
+    author = request.vars.author
+    
+    results = db.reviews.insert(
+        recipe_id = request.args(0, cast=int),
+        body = body,
+        author = author,
+        )
+    redirect(URL('show', args = recipe.id))
 
 
 def download():
@@ -15,17 +23,17 @@ def index():
     recipes = db().select(db.recipes.ALL, orderby=db.recipes.title)
     return dict(recipes=recipes)
 
-@auth.requires_login()
-def delete():
-    parameters = request.args
-    submitted_id = parameters[0]
+# #@auth.requires_login()
+# def delete():
+#     parameters = request.args
+#     submitted_id = parameters[0]
 
-    if db(db.recipes.id == submitted_id).select():
-        db(db.recipes.id == submitted_id).delete()
-        return 'Recipe Deleted Successfully'
+#     if db(db.recipes.id == submitted_id).select():
+#         db(db.recipes.id == submitted_id).delete()
+#         return 'Recipe Deleted Successfully'
 
-    else:
-        return 'No Recipe With the ID found'
+#     else:
+#         return 'No Recipe With the ID found'
 
 
 def getRecipe():
