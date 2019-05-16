@@ -57,14 +57,14 @@ h1 {
 }
 
 h5 {
-  color: SaddleBrown; font-family: 'Allura', cursive; font-size: 30px
+  color: SaddleBrown; font-family: 'Allura', cursive; font-size: 35px
 }
 
 label {
 	color: DarkRed;
 	font-family: 'Khand', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .button {
@@ -73,7 +73,7 @@ label {
   background-color: DarkRed;
   border-radius: 5px;
   color: white;
-  text-align: center;
+  float: left;
   text-decoration: none;
   display: inline-block;
   font-size: 25px;
@@ -90,7 +90,7 @@ h6 {
 	color: DarkRed;
 	font-family: 'Khand', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 </style>
@@ -113,15 +113,16 @@ h6 {
           </div>   
   <h5>LEAVE A REVIEW</h5>
       <hr>
-  <div class="form-group">
+
+  <div id="after_submit"></div>
   <form action="{{=URL('postReview', args=recipe.id)}}" method="post" class="form">
   <div class="row">
     <label class="required" for="name">Your name:</label><br />
     <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
+    <span id="name_validation" class="error_name"></span>
   </div>
   <div class="row">
-    <label class="required" for="message">Your review:</label><br />
+    <label class="required" for="review">Your review:</label><br />
     <textarea id="review" class="input" name="review" rows="7" cols="50"></textarea><br />
     <span id="review_validation" class="error_review"></span>
   </div>
