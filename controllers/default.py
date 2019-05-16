@@ -10,9 +10,9 @@ def postReview():
     
     results = db.reviews.insert(
         recipe_id = request.args(0, cast=int),
-        body = body,
-        author = author,
-        )
+    body = body,
+    author = author,
+            )
     redirect(URL('show', args = recipe.id))
 
 
