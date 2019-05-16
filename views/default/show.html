@@ -131,6 +131,18 @@ h6 {
   </div>
   <h6>REVIEWS</h6>
   <hr>
+  {{for review in reviews:}}
+    <div class="recipe-reviews">
+     <a href="{{=URL('show', args=review.recipe_id)}}">
+    <img src="{{=URL('download', args=review.recipe_id.file)}}"
+             class="img-responsive img-thumbnail">
+     </a>
+     <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;">{{=review.recipe_id}}</h2>
+     <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
+     <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
+     </div>
+     </div>
+  {{pass}}
   
 
 
