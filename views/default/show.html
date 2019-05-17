@@ -80,7 +80,7 @@ label {
   margin: 30px;
   cursor: pointer;
   width: 7%;
-  padding: 10px;
+  padding: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -129,20 +129,18 @@ h6 {
   <input type="submit" class="button" value="Submit">
   </form>
   </div>
-  <h6>REVIEWS</h6>
-  <hr>
-  {{for review in reviews:}}
-    <div class="recipe-reviews">
-     <a href="{{=URL('show', args=review.recipe_id)}}">
-    <img src="{{=URL('download', args=review.recipe_id.file)}}"
-             class="img-responsive img-thumbnail">
-     </a>
-     <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;">{{=review.recipe_id}}</h2>
-     <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
-     <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
-     </div>
-     </div>
-  {{pass}}
+  <hr> 
+  <h6>Reviews</h6>
+  <div class="reviews">
+        <img src="{{=URL('download', args=review.file)}}"
+             class="img-responsive img-thumbnail"> 
+          <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;">{{=review.recipe_id}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Ingredients</u><br>{{=review.author}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Method</u><br>{{=review.body}}</p>
+  </div>
+
+        
+  
   
 
 
