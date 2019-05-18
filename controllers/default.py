@@ -1,7 +1,8 @@
 
 def show():
     recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))
-    return dict(recipe=recipe)
+    reviews = db(db.reviews.recipe_id ==recipe.id).select()
+    return dict(recipe=recipe, reviews=reviews)
 
 def postReview():
     recipe = db.recipes(request.args(0, cast=int)) or redirect(URL('index'))

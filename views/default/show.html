@@ -131,13 +131,12 @@ h6 {
   </div>
   <hr> 
   <h6>Reviews</h6>
-  <!-- <div class="reviews">
-        <img src="{{=URL('download', args=review.file)}}"
-             class="img-responsive img-thumbnail"> 
-          <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;">{{=review.recipe_id}}</p>
+  {{for review in reviews:}}
+  <div class="reviews">
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
-  </div> -->
+  </div>
+  {{pass}}
 
         
   
