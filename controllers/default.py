@@ -68,11 +68,24 @@ def postRecipe():
     form = SQLFORM(db.recipes).process(next=URL('index'))
     return dict(form=form)
 
+def login():
+    return dict()
+
+def authenticate():
+    email = request.vars.email
+    password = request.vars.password
+
+    if auth.login_bare(email,password):
+        redirect(URL('index'))
+    else:
+        return "Login failed"
+
+@auth.requires_login()
 @auth.requires_membership('manager')
 def manage():
-    grid = SQLFORM.smartgrid(db.recipes, linked_tables=['recipes'])
+    grid = SQLFORM.smartgrid(db.reviews)
     return dict(grid=grid)
-
+    
 
 
     
